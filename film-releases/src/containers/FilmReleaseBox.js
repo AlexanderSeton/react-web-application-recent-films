@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import FilmReleaseList from "../components/FilmReleaseList";
-import FilmReleaseLink from "./FilmReleaseLink";
+import FilmReleaseLink from "../components/FilmReleaseLink";
+import FilmReleaseForm from "./FilmReleaseForm";
 
 const FilmReleaseBox = () => {
 
@@ -33,9 +34,16 @@ const FilmReleaseBox = () => {
           ]          
     );
 
+    const addFilmRelease = (submittedFilmRelease) => {
+        submittedFilmRelease.id = Date.now();
+        const updatedFilmReleases = [...films, submittedFilmRelease];
+        setFilms(updatedFilmReleases);
+    };
+
     return (
         <>
             <h1>Upcoming Film Releases (UK)</h1>
+            <FilmReleaseForm onFilmSubmit={addFilmRelease} />
             <FilmReleaseList films={films} />
             <FilmReleaseLink />
         </>
