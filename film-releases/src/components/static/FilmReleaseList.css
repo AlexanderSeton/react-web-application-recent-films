@@ -1,0 +1,16 @@
+#film-list {
+    /* border: 1px black solid; */
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: left;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.film-list-li {
+    padding: 1%;
+}

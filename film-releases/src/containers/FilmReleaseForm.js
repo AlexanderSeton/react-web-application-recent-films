@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import "./static/FilmReleaseForm.css";
 
 const FilmReleaseForm = ({onFilmSubmit}) => {
 
@@ -28,10 +29,10 @@ const FilmReleaseForm = ({onFilmSubmit}) => {
     };
 
     return (
-        <form onSubmit={handleFilmReleaseSubmit}>
-            <input type="text" placeholder="Film Title..." value={title} onChange={handleTitleChange} />
-            <input type="text" placeholder="IMBd URL..." value={url} onChange={handleUrlChange} />
-            <input type="submit" />
+        <form onSubmit={handleFilmReleaseSubmit} id="new-film-form">
+            <input type="text" placeholder="Film Title..." value={title} onChange={handleTitleChange} className="form-input" />
+            <input type="text" placeholder="IMBd URL..." value={url} onChange={handleUrlChange} className="form-input" />
+            <input type="submit" value="Add Film" id="form-button" />
         </form>
     );
 };

@@ -1,0 +1,9 @@
+#upcoming-releases-link {
+    border: 1px solid black;
+    vertical-align: middle;
+    padding: 3.5%;
+    background-color: lightblue;
+    position: relative;
+    top: 30px;
+    text-decoration: none;
+}

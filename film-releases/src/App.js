@@ -3,7 +3,9 @@ import FilmReleaseBox from './containers/FilmReleaseBox';
 
 function App() {
   return (
-    <FilmReleaseBox />
+    <div className="App">
+      <FilmReleaseBox />
+    </div>
   );
 }
 

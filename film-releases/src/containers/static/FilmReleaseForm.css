@@ -1,0 +1,16 @@
+#new-film-form {
+    padding: 0.5%;
+}
+
+.form-input {
+    padding: 1.5%;
+    margin: 1%;
+    font-size: 75%;
+    width: 35%;
+}
+
+#form-button {
+    padding: 1.5%;
+    margin: 1%;
+    background-color: lightblue;
+}

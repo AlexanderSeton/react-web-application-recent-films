@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import FilmReleaseList from "../components/FilmReleaseList";
 import FilmReleaseLink from "../components/FilmReleaseLink";
 import FilmReleaseForm from "./FilmReleaseForm";
+import "./static/FilmReleaseBox.css"
 
 const FilmReleaseBox = () => {
 
@@ -42,9 +43,11 @@ const FilmReleaseBox = () => {
 
     return (
         <>
-            <h1>Upcoming Film Releases (UK)</h1>
+            <h1 id="title">Upcoming Film Releases (UK)</h1>
+            <hr />
             <FilmReleaseForm onFilmSubmit={addFilmRelease} />
             <FilmReleaseList films={films} />
+            <hr />
             <FilmReleaseLink />
         </>
     );
